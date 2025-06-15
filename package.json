@@ -1,0 +1,25 @@
+{
+  "name": "agentnx-extension",
+  "version": "0.1.0",
+  "description": "SillyTavern extension for two-stage AI conversation processing",
+  "main": "scripts/main.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "echo \"Build completed\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/AgentNx.git"
+  },
+  "keywords": [
+    "sillytavern",
+    "AI",
+    "extension",
+    "agent"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}

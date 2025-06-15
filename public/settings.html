@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentNx 设置</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AgentNx 设置</h1>
+    
+    <div class="section">
+      <h2>API 配置</h2>
+      <div class="form-group">
+        <label for="providerList">API 提供者:</label>
+        <select id="providerList" class="form-control"></select>
+        <div class="button-group">
+          <button id="addProvider" class="btn">添加提供者</button>
+          <button id="removeProvider" class="btn btn-danger">删除提供者</button>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="apiUrl">API URL:</label>
+        <input type="text" id="apiUrl" class="form-control" placeholder="https://api.example.com/v1">
+      </div>
+      
+      <div class="form-group">
+        <label for="apiKey">API 密钥:</label>
+        <input type="password" id="apiKey" class="form-control" placeholder="输入API密钥">
+      </div>
+      
+      <div class="button-group">
+        <button id="saveProvider" class="btn btn-primary">保存API配置</button>
+        <button id="fetchModels" class="btn">获取可用模型</button>
+      </div>
+      
+      <div class="form-group">
+        <label>可用模型:</label>
+        <select id="modelList" class="form-control" size="5"></select>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>模型配置</h2>
+      <div class="form-group">
+        <label for="modelA">模型 A (分析模型):</label>
+        <select id="modelA" class="form-control">
+          <option value="">-- 选择模型 --</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="promptA">模型 A 提示词:</label>
+        <textarea id="promptA" class="form-control" rows="3" placeholder="分析对话并生成回复大纲"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="modelB">模型 B (生成模型):</label>
+        <select id="modelB" class="form-control">
+          <option value="">-- 选择模型 --</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="promptB">模型 B 提示词:</label>
+        <textarea id="promptB" class="form-control" rows="3" placeholder="根据大纲生成最终回复"></textarea>
+      </div>
+    </div>
+  </div>
+  
+  <script src="settings.js"></script>
+</body>
+</html>

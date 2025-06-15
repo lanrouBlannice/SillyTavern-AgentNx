@@ -1,0 +1,23 @@
+{
+  "name": "AgentNx",
+  "version": "0.1.0",
+  "description": "双模型协作扩展：模型A分析对话并生成大纲，模型B根据大纲生成最终回复",
+  "author": "Your Name",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "sillytavern": {
+    "displayName": "AgentNx 双模型协作",
+    "icon": "icon.png",
+    "settings": {
+      "html": "public/settings.html",
+      "script": "public/settings.js",
+      "css": "public/styles.css"
+    }
+  }
+}
